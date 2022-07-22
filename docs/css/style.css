@@ -6,6 +6,7 @@ body {
   background-color: #000;
   color: #fff;
 }
+
 a {
   color: #fff;
   text-decoration: none;
@@ -20,6 +21,13 @@ a {
 .clearfix {
   float: none;
   clear: both;
+}
+
+.background-gray {
+  background-color: #111;
+}
+.background-black {
+  background-color: #000;
 }
 #nav #nav-bar {
   display: none;
@@ -107,6 +115,25 @@ a {
   display: none;
 }
 
+/* PHONE 1 */
+#section1 .outside {
+  padding: 10px;
+  /* min-height: 600px; */
+  min-height: 300px;
+}
+#section1 .outside .inside {
+  /* min-height: 220; */
+}
+#section1 .outside .inside .img-phone {
+  background: url("../img/phone.png");
+  height: 100%;
+  min-height: 273px;
+  background-attachment: scroll;
+  background-position: 50% 5em;
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+
 /* TODO: DESKTOP */
 @media screen and (min-width: 800px) {
   .wrap-70 {
@@ -148,5 +175,22 @@ a {
   #iphone-nav .iphone-menu a:last-child {
     font-size: 12px;
     margin-right: 0;
+  }
+
+  /* PHONE 1 */
+
+  #section1 .outside {
+    padding: 10px;
+    /* min-height: 600px; */
+    height: 400px;
+  }
+  #section1 .outside .inside {
+    height: 500px;
+  }
+  #section1 .outside .inside .img-phone {
+    background-attachment: fixed;
+    background-position: 50% 5em;
+    background-repeat: no-repeat;
+    background-size: 800px;
   }
 }
