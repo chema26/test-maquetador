@@ -17,6 +17,14 @@ a {
 .wrap {
   width: 100%;
 }
+.clearfix {
+  float: none;
+  clear: both;
+}
+#nav #nav-bar {
+  display: none;
+}
+
 .nav-mobile {
   overflow: hidden;
   position: relative;
@@ -24,13 +32,14 @@ a {
 .nav-mobile #hamburger {
   display: none;
 }
+
 .nav-mobile a {
-     float: left;
-     display: block;
-     padding: 3%;
-     font-size: 15px;
-     background-color: #fff;
-     color: #000;
+  float: left;
+  display: block;
+  padding: 3%;
+  font-size: 15px;
+  background-color: #fff;
+  color: #000;
 }
 .nav-mobile > a {
   width: 10%;
@@ -52,57 +61,92 @@ a {
 }
 
 #apple {
-     float: left;
-     display: block;
-     width: 15%;
-     margin: 13px 0 0 90px;
+  float: left;
+  display: block;
+  width: 15%;
+  margin: 13px 0 0 90px;
 }
 
-#apple svg{
-     width: 100%;
-     background-color: #fff;
-     border-radius: 50%;
-     height: 52px;
+#apple svg {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 52px;
 }
 
-#bag{
-     float: right;
-     display: block;
-     width: 15%;
-     margin: 13px 8px 0;
+#bag {
+  float: right;
+  display: block;
+  width: 15%;
+  margin: 13px 8px 0;
 }
-#bag svg{
-     width: 100%;
-     background-color: #fff;
-     height: 52px;
-     border-radius: 50%;
+#bag svg {
+  width: 100%;
+  background-color: #fff;
+  height: 52px;
+  border-radius: 50%;
 }
 
-/* TODO: DESKTOP */
-#nav #nav-bar {
+/* TEXT IPHONE */
+#iphone-nav {
+  width: 100%;
+  padding: 13px 0;
+  background-color: #111;
+}
+#iphone-nav .iphone-text {
+  display: block;
+  position: relative;
+  padding: 0 0 0 12px;
+  float: left;
+}
+#iphone-nav .iphone-text a {
+  font-size: 19.5px;
+  font-weight: bolder;
+}
+#iphone-nav .iphone-menu {
   display: none;
 }
 
+/* TODO: DESKTOP */
+@media screen and (min-width: 800px) {
+  .wrap-70 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  /* NAVBAR */
+  #nav #nav-bar {
+    display: block;
+    width: 80%;
+    margin: 13px auto 0;
+    text-align: center;
+  }
+  #nav-bar ul li {
+    display: inline-block;
+    margin-right: 18px;
+    font-size: 13px;
+    padding: 2%;
+  }
+  #nav-bar ul li:last-child {
+    margin-right: 0;
+  }
 
-
-/* DESKTOP MEDIA */
-@media screen and  (min-width:800px){
-     .nav-mobile{
-          display: none;
-     }
-     #nav #nav-bar{
-          display: block;
-          width: 80%;
-          margin: 13px auto 0;
-          text-align: center;
-     }
-     #nav-bar ul li{
-          display: inline-block;
-          margin-right: 18px;
-          font-size: 13px;
-          padding: 2%;
-     }
-     #nav-bar ul li:last-child{
-          margin-right: 0;
-     }
+  /* TEXT IPHONE */
+  #iphone-nav .iphone-text {
+    padding: 0;
+  }
+  #iphone-nav .iphone-menu {
+    display: block;
+    float: right;
+  }
+  #iphone-nav .iphone-menu a {
+    font-size: 12px;
+    margin: 0 13px 0 0;
+  }
+  #iphone-nav .iphone-menu a:last-child {
+    font-size: 12px;
+    margin-right: 0;
+  }
 }
