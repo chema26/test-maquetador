@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+  color: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* TODO: MOBILE */
+.container {
+  width: 100%;
+}
+.wrap {
+  width: 100%;
+}
+.nav-mobile {
+  overflow: hidden;
+  position: relative;
+}
+.nav-mobile #hamburger {
+  display: none;
+}
+.nav-mobile a {
+     float: left;
+     display: block;
+     padding: 3%;
+     font-size: 15px;
+     background-color: #fff;
+     color: #000;
+}
+.nav-mobile > a {
+  width: 10%;
+  display: block;
+  padding: 14px;
+  font-size: 14px;
+  height: 38px;
+}
+.nav-mobile > a > svg {
+  position: absolute;
+  background-color: white;
+  display: block;
+  width: 10%;
+  border-radius: 5px;
+}
+.nav-mobile a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#apple {
+     float: left;
+     display: block;
+     width: 15%;
+     margin: 13px 0 0 90px;
+}
+
+#apple svg{
+     width: 100%;
+     background-color: #fff;
+     border-radius: 50%;
+     height: 52px;
+}
+
+#bag{
+     float: right;
+     display: block;
+     width: 15%;
+     margin: 13px 8px 0;
+}
+#bag svg{
+     width: 100%;
+     background-color: #fff;
+     height: 52px;
+     border-radius: 50%;
+}
+
+/* TODO: DESKTOP */
+#nav #nav-bar {
+  display: none;
+}
+
+
+
+/* DESKTOP MEDIA */
+@media screen and  (min-width:800px){
+     .nav-mobile{
+          display: none;
+     }
+     #nav #nav-bar{
+          display: block;
+          width: 80%;
+          margin: 13px auto 0;
+          text-align: center;
+     }
+     #nav-bar ul li{
+          display: inline-block;
+          margin-right: 18px;
+          font-size: 13px;
+          padding: 2%;
+     }
+     #nav-bar ul li:last-child{
+          margin-right: 0;
+     }
+}
