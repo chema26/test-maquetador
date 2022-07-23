@@ -7,3 +7,5 @@ Usos:
 3. JS 
 
 La página es usando con HTML, CSS puro con un poco de JavaScript.
+
+Con un poco de responsive para un sólo móvil. 
