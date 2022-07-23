@@ -134,6 +134,24 @@ a {
   background-size: 200px;
 }
 
+/* PHONE 2 */
+#section2 .outside .inside {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#section2 .outside .inside .intro {
+  text-align: center;
+  margin: 12px 25px;
+}
+#section2 .outside .inside .intro h2 {
+  font-size: 50px;
+  margin: 0 0 19px;
+}
+#section2 .outside .inside .intro .paragraph {
+  font-size: 15px;
+  font-weight: 900;
+}
+
 /* TODO: DESKTOP */
 @media screen and (min-width: 800px) {
   .wrap-70 {
@@ -179,12 +197,13 @@ a {
 
   /* PHONE 1 */
 
-  #section1 .outside {
+  #section1 .outside,
+  #section2 .outside {
     padding: 10px;
-    /* min-height: 600px; */
     height: 400px;
   }
-  #section1 .outside .inside {
+  #section1 .outside .inside,
+  #section2 .outside .inside {
     height: 500px;
   }
   #section1 .outside .inside .img-phone {
@@ -192,5 +211,27 @@ a {
     background-position: 50% 5em;
     background-repeat: no-repeat;
     background-size: 800px;
+  }
+
+  /* PHONE */
+  #section2 .outside .inside {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  #section2 .outside .inside .intro {
+    width: 70%;
+    margin: 0 auto;
+    padding: 80px 0;
+    text-align: center;
+  }
+  #section2 .outside .inside .intro h2 {
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0 0 19px;
+  }
+  #section2 .outside .inside .intro .paragraph {
+    font-size: 30px;
+    font-size: 30px;
+    font-weight: 900;
   }
 }
